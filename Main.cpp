@@ -135,6 +135,23 @@ int main(){
             }
 
         }
+        if (lineacodigo[0]=='c'&&lineacodigo[1]=='h'&&lineacodigo[2]=='a'&&lineacodigo[3]=='n'&&lineacodigo[4]=='g'&&lineacodigo[5]=='e'&&lineacodigo[6]=='C'&&lineacodigo[7]=='o'&&lineacodigo[8]=='l'&&lineacodigo[9]=='o'&&lineacodigo[10]=='r')
+        {
+            if (lineacodigo[12]=='w'||lineacodigo[12]=='W')
+            {
+                start_color();
+                init_pair(1,COLOR_RED,COLOR_WHITE);
+                wbkgd(stdscr,COLOR_PAIR(1));
+            }else if(lineacodigo[12]=='b'||lineacodigo[12]=='B'){
+                start_color();
+                init_pair(1,COLOR_WHITE,COLOR_BLACK);
+                wbkgd(stdscr,COLOR_PAIR(1));
+            }else if(lineacodigo[12]=='r'||lineacodigo[12]=='R'){
+                start_color();
+                init_pair(1,COLOR_YELLOW,COLOR_RED);
+                wbkgd(stdscr,COLOR_PAIR(1));
+            }   
+        }
         seguir=debeSeguir(lineacodigo);
         //detecta si se escribe un exit
     }//fin while
